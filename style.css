@@ -1,0 +1,439 @@
+@font-face {
+    font-family: "Avenir Next Regular";
+    src: url(assets/fonts/AvenirNext-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir Next Medium";
+    src: url(assets/fonts/AvenirNext-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir Next Light";
+    src: url(assets/fonts/AvenirNext-UltraLight.ttf) format("truetype");
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Avenir Next Light', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.title {
+    color: white;
+    font-family: "Avenir Next Light";
+    text-align: center;
+    font-size: 48px;
+    padding-top: 60px;
+}
+
+.main-section {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 55px;
+}
+
+.main-section p {
+    color: white;
+    font-family: "Avenir Next Light";
+    text-align: center;
+    font-size: 34px;
+}
+
+.amount-input {
+    text-align: center;
+    align-self: center;
+    font-size: 34px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border: 0px;
+    border-bottom: 1px solid;
+}
+
+.date-input {
+/*    padding-left: 70px;*/
+    text-align: center;
+    align-self: center;
+    font-size: 34px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border: 0px;
+    border-bottom: 1px solid;
+}
+
+.blue-color {
+    background-color: #65A4FD;
+}
+
+.bg {
+    background-image: url(assets/scrim.png);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-header h1 {
+    color: white;
+}
+
+.signup-form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.text-center {
+    width: 100%;
+    text-align: center;
+}
+
+.phone-image {
+    padding-top: 40px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.social-buttons li {
+    height: inherit;
+}
+
+.social-buttons {
+    font-size: 18px;
+}
+
+#icon-upper-left {
+    float: left;
+    width: 55px;
+    display: block;
+    height: 63px;
+}
+
+#name-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-side h1 {
+    color: white;
+}
+
+.main-row {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.main {
+    margin-left: 100px;
+    margin-top: 60px;
+    padding-right: 60px;
+}
+
+.thankyou {
+    display: flex;
+    justify-content: center;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.name-subtext {
+    font-family: 'Avenir Next Light', sans-serif;
+    color: white;
+    font-size: 34px;
+}
+
+.name-subtext-thankyou {
+    font-family: 'Avenir Next Light', sans-serif;
+    color: white;
+    font-size: 34px;
+    text-align: center
+}
+
+.signup .btn {
+    margin-bottom: 40px;
+}
+
+.signup .form-group {
+    margin-bottom: 0px;
+}
+
+.description {
+    font-family: 'Avenir Next Light', sans-serif;
+    color: white;
+    font-size: 24px;
+    margin-top: 55px;
+}
+
+.signup-description {
+    font-family: 'Avenir Next Light', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.btn-primary {
+    background-color: white;
+    font-family: 'Avenir Next Medium', sans-serif;
+    color: #3185FC;
+    margin: auto;
+    width: 150px;
+    border: none;
+}
+
+.sign-up-container {
+    padding-top: 10px;
+    padding-left: 0;
+    margin: 0 auto;
+    font-family: 'Avenir Next Medium', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.validate {
+    width: 100%;
+}
+
+.btn-margin-top {
+    margin-top: 30px;
+}
+
+.btn:hover {
+    cursor: pointer
+}
+
+#app-name {
+    color: white;
+    font-family: 'Avenir Next Regular', sans-serif;
+    font-size: 56px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin-right: 4px;
+    position: relative;
+}
+
+#app-name-thankyou {
+    color: white;
+    font-family: 'Avenir Next Regular', sans-serif;
+    font-size: 56px;
+    padding-right: 10px;
+    margin-right: 4px;
+    position: relative;
+}
+
+#back-btn:hover {
+    color: white;
+    text-decoration: none
+}
+
+#phone-image {
+    background-image: url(assets/Dashboard_iphone7silver_portrait.png);
+    width: 298px;
+    height: 606px;
+    margin: 0 auto;
+}
+
+#phone-image video {
+    margin-top: 71px;
+}
+
+#steps-android-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#steps-android {
+    background-image: url(assets/Authentication-Android_nexus5x-portrait.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 582px;
+    margin: 0 auto;
+}
+
+#signup-main {
+    background-color: white;
+    color: #65A4FD;
+    margin: 50px 35%;
+    width: 30%;
+}
+
+#steps-img-container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.section-header h1 {
+    width: 60%;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Avenir Next Light', sans-serif;
+}
+
+@media screen and (max-device-width:400px) {
+    .main {
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-right: 0px;
+    }
+    .signup-form {
+        width: 75%;
+    }
+    .section-header h1 {
+        width: 95%;
+    }
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    color: #65A4FD;
+    font-weight: 700;
+    padding: 50px;
+    text-align: center;
+}
+
+.team {
+    padding-bottom: 30px
+}
+
+ol {
+    min-height: 510px;
+    padding-left: 5%;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+ol li {
+    min-height: 170px;
+    cursor: pointer;
+    transition: background-color 0.53s;
+    -webkit-transition: background-color 0.53s;
+    -moz-transition: background-color 0.53s;
+}
+
+li>img {
+    display: inline-block;
+    height: 50px;
+    text-align: right;
+    margin-left: 30px;
+    margin-top: 75px;
+}
+
+li>div {
+    min-height: 200px;
+    height: 100%;
+    width: 72%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Avenir Next Regular', sans-serif;
+    color: #65A4FD;
+    padding: 18px 20px;
+    vertical-align: middle;
+}
+
+li h3 {
+    font-size: 26px;
+    font-family: 'Avenir Next Regular', sans-serif;
+}
+
+li p {
+    font-size: 24px;
+    font-family: 'Avenir Next Light', sans-serif;
+}
+
+#steps-section {
+    background-color: #f9f9f9;
+    padding-bottom: 25px;
+}
+
+.step-highlight {
+    background-color: #D6E7FE;
+}
+
+.step-screen {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 56px;
+    padding-left: 14px;
+    width: 275px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#team {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #65A4FD;
+}
+
+.team-member>img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member>h3 {
+    font-family: "Avenir Next Regular";
+    color: #65A4FD;
+    font-size: 26px;
+}
+
+.team-member>h4 {
+    font-family: "Avenir Next Light";
+    color: #65A4FD;
+    font-size: 24px;
+}
+
+.team-member>p {
+    font-family: "Avenir Next Light";
+    color: #65A4FD;
+    font-size: 16px;
+}
+
+.white-text {
+    color: white;
+}
