@@ -26,12 +26,26 @@
         ga('send', 'pageview');
     </script>
     <script async src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <!-- date picker scripts -->
+    <script type="text/javascript" src="libraries/pickadate.js/lib/picker.js"></script>
+    <script type="text/javascript" src="libraries/pickadate.js/lib/picker.date.js"></script>
+    <script type="text/javascript" src="libraries/pickadate.js/lib/picker.time.js"></script>
+
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <!-- date picker styles -->
+    <link rel="stylesheet" type="text/css" href="libraries/pickadate.js/lib/themes/classic.css">
+    <link rel="stylesheet" type="text/css" href="libraries/pickadate.js/lib/themes/classic.date.css">
+    <link rel="stylesheet" type="text/css" href="libraries/pickadate.js/lib/themes/classic.time.css">
+
+
+
     <title>Coin Clear: Invest Spare Change into Cryptocurrency</title>
 
 </head>
@@ -51,7 +65,16 @@
                     <p>in Bitcoin on</p>
                 </div>
                 <div class="col-md-3">
-                    <input type="date" id="date-select" class="form-control date-input" value="2016-09-18" min="2010-07-18">
+                    <!-- <input id="date-select" class="form-control date-input" value="2016-09-18" min="2010-07-18"> -->
+                    <div class="form-group">
+                          <div class="input-group">
+                        <input type="text" class="date-input form-control"/>
+                            <span class="input-group-btn">
+                              <button class="date-button btn btn-default" type="button"> @ </button>
+                            </span>
+                      </div>
+                      <div id="date-picker"> </div>
+                    </div>
                 </div>
                 <div class="col">
                     <p>?</p>
