@@ -226,7 +226,7 @@ html {
 }
 
 #regret-button {
-    background-color: white;
+    background: white;
     font-family: 'Avenir Next Medium', sans-serif;
     color: #3185FC;
     margin: auto;
@@ -419,12 +419,6 @@ li p {
 
 .white-text {
     color: white;
-}
-
-#regret-button {
-    margin: 25px;
-    height: 40px;
-    width: 200px;
 }
 
 #would-have {
