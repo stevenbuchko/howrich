@@ -72,7 +72,7 @@ html {
     padding-top: 40px;
 }
 
-.amount-input {
+.amount-input, .datepicker-here {
     text-align: center;
     align-self: center;
     font-size: 34px;
