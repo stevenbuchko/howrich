@@ -30,7 +30,7 @@ html {
 }
 
 .main-section {
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     position: relative;
@@ -387,53 +387,18 @@ li p {
     background-color: #D6E7FE;
 }
 
-.step-screen {
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 56px;
-    padding-left: 14px;
-    width: 275px;
-    height: auto;
-    margin: 0 auto;
-}
-
-#team {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    color: #65A4FD;
-}
-
-.team-member>img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    height: 200px;
-    margin-bottom: 20px;
-}
-
-.team-member {
-    text-align: center;
-}
-
-.team-member>h3 {
-    font-family: "Avenir Next Regular";
-    color: #65A4FD;
-    font-size: 26px;
-}
-
-.team-member>h4 {
-    font-family: "Avenir Next Light";
-    color: #65A4FD;
-    font-size: 24px;
-}
-
-.team-member>p {
-    font-family: "Avenir Next Light";
-    color: #65A4FD;
-    font-size: 16px;
-}
-
 .white-text {
     color: white;
+}
+
+#regret-button {
+    margin: 25px;
+    height: 40px;
+    width: 200px;
+}
+
+#would-have {
+    margin-top: 15px;
+    font-size: 40px;
+    
 }

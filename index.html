@@ -25,17 +25,12 @@
         ga('create', 'UA-105523261-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script async src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
-    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> -->
+    <script async src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
-
     <title>Coin Clear: Invest Spare Change into Cryptocurrency</title>
 
 </head>
@@ -55,14 +50,14 @@
                     <p>in Bitcoin on</p>
                 </div>
                 <div class="col-md-3">
-                    <input type="date" id="date-select" class="form-control date-input" value="2016-09-18">
+                    <input type="date" id="date-select" class="form-control date-input" value="2016-09-18" min="2010-07-18">
                 </div>
                 <div class="col">
                     <p>?</p>
                 </div>
             </div>
             <div type="button" id="regret-button" class="btn btn-primary">Calculate My Regret!</div>
-            <div>You Would Have $<span id="calc-amount">0</span></div>
+            <div class="white-text" id="would-have">You Would Have $<span id="calc-amount">0</span></div>
         </div>
         
     </div>

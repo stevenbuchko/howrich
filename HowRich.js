@@ -1,9 +1,9 @@
-var date = "2017-01-01";
 var curPrice = 0;
 var histPrice = 0;
 
 $.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json', function(data) {
 	console.dir(data)
+	document.querySelector("#date-select").max = data.time.updatedISO.slice(0,10);
 	curPrice = data.bpi.USD.rate_float;
 	// console.log(curPrice)
 });
@@ -18,7 +18,6 @@ function setCurPrice(data) {
 
 initiate.addEventListener("click", function(){
 	date = document.getElementById("date-select").value;
-	console.log(date)
 	// get the price for the selected date
 	$.getJSON('https://api.coindesk.com/v1/bpi/historical/close.json?start=' + date + '&end=' + date, function(data) {
 		// histPrice = data.responseJSON.bpi[date];
