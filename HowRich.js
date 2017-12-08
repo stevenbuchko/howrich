@@ -1,9 +1,9 @@
 var curPrice = 0;
 var histPrice = 0;
 
-$('[data-toggle="datepicker"]').datepicker({
-	format: 'yyyy-mm-dd'
-});
+// $('[data-toggle="datepicker"]').datepicker({
+// 	format: 'yyyy-mm-dd'
+// });
 
 
 var initiate = document.getElementById("regret-button");
