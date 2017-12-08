@@ -44,6 +44,34 @@ html {
     font-size: 34px;
 }
 
+.backlink-text {
+    padding-top: 100px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.backlink-text p {
+    color: white;
+    font-family: "Avenir Next Light";
+    text-align: center;
+    font-size: 34px;  
+    margin-bottom: 0px;
+}
+
+.logo {
+    max-width: 30%;
+}
+
+.answer {
+    color: white;
+    font-family: "Avenir Next Light";
+    text-align: center;
+    font-size: 54px;
+    padding-top: 40px;
+}
+
 .amount-input {
     text-align: center;
     align-self: center;
@@ -197,13 +225,15 @@ html {
     font-size: 24px;
 }
 
-.btn-primary {
+#regret-button {
     background-color: white;
     font-family: 'Avenir Next Medium', sans-serif;
     color: #3185FC;
     margin: auto;
-    width: 150px;
+    width: auto;
     border: none;
+    margin-top: 50px;
+    font-size: 24px;
 }
 
 .sign-up-container {
