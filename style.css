@@ -226,7 +226,7 @@ html {
 }
 
 #regret-button {
-    background-color: white;
+    background: white;
     font-family: 'Avenir Next Medium', sans-serif;
     color: #3185FC;
     margin: auto;
