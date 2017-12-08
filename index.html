@@ -27,9 +27,7 @@
     </script>
     <script async src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
     <!-- date picker scripts -->
-    <script type="text/javascript" src="libraries/pickadate.js/lib/picker.js"></script>
-    <script type="text/javascript" src="libraries/pickadate.js/lib/picker.date.js"></script>
-    <script type="text/javascript" src="libraries/pickadate.js/lib/picker.time.js"></script>
+    <script type="text/javascript" src="libraries/datepicker/src/js/datepicker.js"></script>
 
 
 
@@ -40,10 +38,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
     <!-- date picker styles -->
-    <link rel="stylesheet" type="text/css" href="libraries/pickadate.js/lib/themes/classic.css">
-    <link rel="stylesheet" type="text/css" href="libraries/pickadate.js/lib/themes/classic.date.css">
-    <link rel="stylesheet" type="text/css" href="libraries/pickadate.js/lib/themes/classic.time.css">
-
+    <link rel="stylesheet" type="text/css" href="libraries/datepicker/src/css/datepicker.css">
 
 
     <title>Coin Clear: Invest Spare Change into Cryptocurrency</title>
@@ -66,15 +61,8 @@
                 </div>
                 <div class="col-md-3">
                     <!-- <input id="date-select" class="form-control date-input" value="2016-09-18" min="2010-07-18"> -->
-                    <div class="form-group">
-                          <div class="input-group">
-                        <input type="text" class="date-input form-control"/>
-                            <span class="input-group-btn">
-                              <button class="date-button btn btn-default" type="button"> @ </button>
-                            </span>
-                      </div>
-                      <div id="date-picker"> </div>
-                    </div>
+                    <input type="edit" data-toggle="datepicker">
+                    
                 </div>
                 <div class="col">
                     <p>?</p>
