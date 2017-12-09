@@ -5,9 +5,15 @@ var histPrice = 0;
 // 	format: 'yyyy-mm-dd'
 // });
 
+$('#date').datepicker({
+	maxDate: new Date()
+})
 
 var initiate = document.getElementById("regret-button");
 
+Date.prototype.toString = function() {
+    return this.getFullYear() + "-" + this.getMonth() + "-" + this.getDate()
+}
 
 function setCurPrice(data) {
 	curPrice = data.bpi.USD.rate_float;
@@ -15,7 +21,8 @@ function setCurPrice(data) {
 
 
 initiate.addEventListener("click", function(){
-	date = document.getElementById("date-select").value;
+	// var buyDate = $('#date').data().datepicker.selectedDates[0]
+	// var date = buyDate.toString();
 	//get the price for todays date
 	$.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json', function(data) {
 		// console.dir(data)
