@@ -6,13 +6,28 @@ var histPrice = 0;
 // });
 
 $('#date').datepicker({
-	maxDate: new Date()
+	maxDate: new Date(),
+	minDate: new Date(2010,6,18)
 })
+
+//get the price for todays date
+$.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json', function(data) {
+	// console.dir(data)
+	// document.querySelector("#date-select").max = data.time.updatedISO.slice(0,10);
+	curPrice = data.bpi.USD.rate_float;
+	// console.log(curPrice)
+});
 
 var initiate = document.getElementById("regret-button");
 
 Date.prototype.toString = function() {
-    return this.getFullYear() + "-" + this.getMonth() + "-" + this.getDate()
+	var month = this.getMonth() + 1;
+	if (month < 10)
+		month = "0" + month;
+	var day = this.getDate();
+	if (day < 10)
+		day = "0" + day
+    return this.getFullYear() + "-" + month + "-" + day
 }
 
 function setCurPrice(data) {
@@ -21,15 +36,9 @@ function setCurPrice(data) {
 
 
 initiate.addEventListener("click", function(){
-	// var buyDate = $('#date').data().datepicker.selectedDates[0]
-	// var date = buyDate.toString();
-	//get the price for todays date
-	$.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json', function(data) {
-		// console.dir(data)
-		// document.querySelector("#date-select").max = data.time.updatedISO.slice(0,10);
-		curPrice = data.bpi.USD.rate_float;
-		// console.log(curPrice)
-	});
+	var buyDate = $('#date').data().datepicker.selectedDates[0]
+	var date = buyDate.toString();
+	
 	// get the price for the selected date
 	$.getJSON('https://api.coindesk.com/v1/bpi/historical/close.json?start=' + date + '&end=' + date, function(data) {
 		// histPrice = data.responseJSON.bpi[date];
