@@ -34,6 +34,9 @@ function setCurPrice(data) {
 	curPrice = data.bpi.USD.rate_float;
 }
 
+function withCommas(num) {
+	return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 initiate.addEventListener("click", function(){
 	var buyDate = $('#date').data().datepicker.selectedDates[0]
@@ -53,5 +56,5 @@ initiate.addEventListener("click", function(){
 function calculatePrice(){
 	var rateIncrease = curPrice/histPrice;
 	var amount = parseInt(document.querySelector('.amount-input').value,10);
-	document.getElementById("calc-amount").textContent = (amount*rateIncrease).toFixed(2);
+	document.getElementById("calc-amount").textContent = withCommas((amount*rateIncrease).toFixed(2));
 }
