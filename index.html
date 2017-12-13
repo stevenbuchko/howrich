@@ -6,41 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--     NEEDS CONTENT-->
-    <meta name="description" content="PLACEHOLDER FOR NOW">
+    <meta name="description" content="Feeling some regret for not investing in Bitcoin? Use this tool to calculate how rich you'd be if you had invested in Bitcoin earlier.">
 
     <!--     NEEDS UPDATE TO SCRIPT -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105523261-2"></script>
     <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        window.dataLayer = window.dataLayer || [];
 
-        ga('create', 'UA-105523261-1', 'auto');
-        ga('send', 'pageview');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-105523261-2');
     </script>
-    
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 
     <link href="air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
-   
 
-    
-    
-    
+
+
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet" />
-    
 
-    
+
+
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
@@ -54,8 +50,8 @@
     <div class="container-fluid blue-color bg">
         <h1 class="title">How rich would I be...</h1>
         <div class="coindesk-callout">
-            <p>Powered by: 
-            <a href="https://www.coindesk.com/price/">CoinDesk</a></p>
+            <p>Powered by:
+                <a href="https://www.coindesk.com/price/">CoinDesk</a></p>
         </div>
         <div class="main-section">
             <div class="row">
@@ -69,13 +65,13 @@
                     <p>in Bitcoin on</p>
                 </div>
                 <div class="col-lg-3 col-md-5">
-                    <input type='text' id='date' class='datepicker-here' data-language='en'/>
+                    <input type='text' id='date' class='datepicker-here' data-language='en' />
                 </div>
                 <div class="col-lg-1 col-md-1">
                     <p>?</p>
                 </div>
             </div>
-            
+
             <button type="button" id="regret-button" class="btn btn-primary">Calculate my regret</button>
             <div class="white-text" id="would-have">I would have $<span id="calc-amount">0</span></div>
         </div>
