@@ -443,3 +443,30 @@ li p {
     font-size: 40px;
     
 }
+
+@media (max-device-width: 480px) {
+    .logo {
+        max-width: 80%;
+        padding-bottom: 30px;
+    }
+    
+    .backlink-text {
+        padding-top: 30px;
+    }
+    
+    .backlink-text p {
+        font-size: 32px;  
+    }
+    
+    .main-section {
+        padding-top: 0px;
+    }
+    
+    .title {
+        font-size: 34px;
+    }
+    
+    #regret-button {
+        margin: 0px;
+    }
+}
