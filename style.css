@@ -458,6 +458,15 @@ li p {
         font-size: 32px;  
     }
     
+    .col-md-3 p {
+        margin-bottom: .5rem;
+        padding-top: 25px;
+    }
+    
+    .datepicker-here {
+        width: 100%;
+    }
+    
     .main-section {
         padding-top: 0px;
     }
@@ -468,5 +477,7 @@ li p {
     
     #regret-button {
         margin: 0px;
+        width: 100%;
+        margin-top: 30px;
     }
 }
