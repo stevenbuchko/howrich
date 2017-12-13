@@ -60,6 +60,17 @@ html {
     margin-bottom: 0px;
 }
 
+.coindesk-callout {
+    text-align: center;
+    color: white;
+    font-family: Avenir Next Light;
+}
+
+.coindesk-callout a {
+    font-family: Avenir Next Regular;
+    color: white;
+}
+
 .logo {
     max-width: 30%;
 }
