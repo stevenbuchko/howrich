@@ -5,10 +5,21 @@ var histPrice = 0;
 // 	format: 'yyyy-mm-dd'
 // });
 
-$('#date').datepicker({
+//$('#date').datepicker({
+//	maxDate: new Date(),
+//	minDate: new Date(2010,6,18),
+//    startDate: new Date(2011, 11, 1),
+//    autoClose: true
+//})
+
+var myDatePicker = $('#date').datepicker({
 	maxDate: new Date(),
-	minDate: new Date(2010,6,18)
-})
+	minDate: new Date(2010,6,18),
+    startDate: new Date(2011, 11, 1),
+    autoClose: true
+}).data('datepicker');
+
+myDatePicker.selectDate(new Date(2011, 11, 1));
 
 //get the price for todays date
 $.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json', function(data) {
@@ -58,3 +69,5 @@ function calculatePrice(){
 	var amount = parseInt(document.querySelector('.amount-input').value,10);
 	document.getElementById("calc-amount").textContent = withCommas((amount*rateIncrease).toFixed(2));
 }
+
+

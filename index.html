@@ -24,8 +24,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-
+    
+    
     <link href="air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
 
 
@@ -80,9 +80,22 @@
             <a href="https://coinclear.io"><img class="logo" src="assets/logo.png" /></a>
         </div>
 
-
         <script src="air-datepicker/dist/js/datepicker.min.js"></script>
         <script src="air-datepicker/dist/js/i18n/datepicker.en.js"></script>
 
         <script type="text/javascript" src="HowRich.js"></script>
+
+<!--
+        <script>
+            document.getElementById('regret-button').click()
+        </script>
+-->
+        
+        <script>
+        $(document).ajaxStop(function () {
+            $('#regret-button').click();
+        });
+        </script>
+
+
 </body>
