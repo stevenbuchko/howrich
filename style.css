@@ -441,7 +441,7 @@ li p {
 #would-have {
     margin-top: 15px;
     font-size: 40px;
-    
+    visibility: hidden;
 }
 
 @media (max-device-width: 480px) {

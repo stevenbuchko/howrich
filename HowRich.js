@@ -61,6 +61,8 @@ initiate.addEventListener("click", function(){
 		// console.log('Huh?')
 		calculatePrice()
 	});
+    
+    $('#would-have').css('visibility', 'visible');
 	
 })
 
@@ -69,5 +71,3 @@ function calculatePrice(){
 	var amount = parseInt(document.querySelector('.amount-input').value,10);
 	document.getElementById("calc-amount").textContent = withCommas((amount*rateIncrease).toFixed(2));
 }
-
-
